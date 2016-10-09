@@ -6,7 +6,7 @@ const Login=React.createClass({
         return <div>
           <Navgation/>
           <Pitcher/>
-          < Footer/>
+          <Footer/>
         </div>
 
         }
