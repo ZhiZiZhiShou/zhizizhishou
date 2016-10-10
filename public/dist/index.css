@@ -34,8 +34,9 @@ body {
   background-color: #dddddd;
   width: auto;
   margin-top: 20px;
-  height: 130px;
+  height: auto;
 }
+
 .home-footer-last{
   margin-top: 5px;
   font-size: 20px;

@@ -22,8 +22,14 @@ const Navgation = React.createClass({
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
 
         <ul className=" col-lg-2 col-md-offset-6 nav nav-pills navbar-right home-head-right">
-          <li><a href="#">登录</a></li>
-          <li><a href="#">注册</a></li>
+          {/*<li><a href="./components/Enter">登录</a></li>*/}
+
+          <ReactRouter.Link to="/Enter">
+            {/*<li className="col-xs-4"><span className="glyphicon glyphicon-circle-arrow-left">返回</span></li>*/}
+            <li>登录</li>
+          </ReactRouter.Link>
+
+          {/*<li><a href="./components/Registered.js">注册</a></li>*/}
 
         </ul>
       </div>
