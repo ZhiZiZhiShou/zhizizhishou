@@ -17,7 +17,8 @@ const Navgation = React.createClass({
       <div className="navbar row home-head  nav-pills">
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
         <ul className=" col-lg-2 col-md-offset-6 nav nav-pills navbar-right home-head-right">
-          <li><a href="#">登录</a></li>
+          <li><ReactRouter.Link to="/Home">登录</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Login">返回</ReactRouter.Link></li>
         </ul>
       </div>
     )

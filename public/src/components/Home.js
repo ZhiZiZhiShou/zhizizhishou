@@ -20,9 +20,7 @@ const Home = React.createClass({
 
 const Navgation = React.createClass({
   render(){
-
     return (
-
       <div className="navbar row home-head  nav-pills">
 
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
@@ -32,8 +30,9 @@ const Navgation = React.createClass({
           <li><a href="#">暖窝窝</a></li>
           <li><a href="#">牵小手</a></li>
           <li><a href="#">情人湖</a></li>
-          <li><a href="./components/Login">个人中心</a></li>
-          <li><a href="#">退出</a></li>
+          <li><ReactRouter.Link to="/Personal"> 个人中心</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Login"> 退出</ReactRouter.Link></li>
+          {/*<li><a href="#">退出</a></li>*/}
 
         </ul>
       </div>

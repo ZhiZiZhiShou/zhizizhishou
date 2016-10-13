@@ -17,7 +17,8 @@ const Navgation = React.createClass({
       <div className="navbar row home-head  nav-pills">
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
         <ul className=" col-lg-2 col-md-offset-6 nav nav-pills navbar-right home-head-right">
-          <li><a href="#">注册</a></li>
+          <li><ReactRouter.Link to="/Registered"> 注册</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Login"> 返回</ReactRouter.Link></li>
         </ul>
       </div>
     )
@@ -52,10 +53,12 @@ const Add = React.createClass({
         </div>
         <div className="form-group row">
           <div className="col-md-offset-2 col-md-1">
-            <button type="submit" className="btn btn-default">登录</button>
+            <button type="submit" className="btn btn-default"><ReactRouter.Link to="/Home"> 登录</ReactRouter.Link>
+            </button>
           </div>
           <div className="col-md-offset-1">
-            <button type="submit" className="btn btn-default">忘记密码</button>
+            <button type="submit" className="btn btn-default"><ReactRouter.Link to="/Home"> 忘记密码</ReactRouter.Link>
+            </button>
           </div>
         </div>
       </form>
