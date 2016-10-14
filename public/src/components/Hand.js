@@ -1,17 +1,11 @@
 import React, {Component} from "react";
 const Home = React.createClass({
-  getInitialState: function () {
-    return {
-      isClicked: true,
-      imageArray: ["1.jpg", "3.jpg", "4.jpg", "6.jpg"]
-    }
-  },
 
   render(){
     return (
       <div className="home-nav">
         <Navgation/>
-        <Carousel onChange={this.state.imageArray}/>
+        <Chat/>
         <Footer/>
       </div>
     )
@@ -26,7 +20,7 @@ const Navgation = React.createClass({
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
 
         <ul className=" col-lg-5 col-md-offset-3 nav nav-pills navbar-right home-head-right">
-          <li><a href="#">首页</a></li>
+          <li><ReactRouter.Link to="/Home">首页</ReactRouter.Link></li>
           <li><a href="#">暖窝窝</a></li>
           <li><ReactRouter.Link to="/Hand">心里话</ReactRouter.Link></li>
           <li><a href="#">情人湖</a></li>
@@ -38,14 +32,28 @@ const Navgation = React.createClass({
   }
 })
 
-
-const Carousel = React.createClass({
-  render(){
-    return <div id="carousel-example-generic" className="carousel slide container" data-ride="carousel">
-      <div className="my-img"><img src={"../src/image/11.jpg"} alt="..."/></div>
+const Chat = React.createClass({
+  render: function () {
+    return <div className="hand-chat">
+      <div className="hand-name ">
+        对方正在输入
+      </div>
+      <div className="hand-chat1">
+        hello
+      </div>
+      <div className="hand-chat2">
+        hello
+      </div>
+      <div className="hand-chat1">
+        早安
+      </div>
+      <div className="hand-chat2">
+        早安
+      </div>
     </div>
+
   }
-});
+})
 
 const Footer = React.createClass({
   render(){

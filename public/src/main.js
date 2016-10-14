@@ -6,6 +6,7 @@ import Login from "./components/Login"
 import Enter from "./components/Enter"
 import Home from "./components/Home"
 import Registered from "./components/Registered"
+import Hand from "./components/Hand"
 
 render(
   <ReactRouter.Router>
@@ -15,5 +16,7 @@ render(
       <ReactRouter.Route path="/Personal" component={Personal}/>
       <ReactRouter.Route path="/Registered" component={Registered}/>
       <ReactRouter.Route path="/Home" component={Home}/>
+      <ReactRouter.Route path="/Hand" component={Hand}/>
+
      </ReactRouter.Router>
   , document.getElementById("app"));
