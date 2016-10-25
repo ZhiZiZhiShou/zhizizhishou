@@ -72,14 +72,14 @@ const Chat = React.createClass({
           <br/><br/><br/>
 
           <div className="form-group">
-              <input type="password" className=" truth-chat-last" id="lastname" placeholder="请输入发送消息，回车自动发送"/>
+              <input type="text" className=" truth-chat-last" id="lastname" placeholder="请输入发送消息，回车自动发送"/>
           </div>
 
         </div>
 
         <div className="navbar-right col-lg-4">
-          {/*<img src={"../src/image/logoman.png "} alt="..."/>*/}
-          <img src={"../src/image/logowoman.png "} alt="..."/>
+          <img src={"../src/image/logoman.png "} alt="..."/>
+          {/*<img src={"../src/image/logowoman.png "} alt="..."/>*/}
         </div>
 
       </div>

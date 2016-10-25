@@ -55,7 +55,7 @@ const Content = React.createClass({
                   <li><img src="../src/image/book5.jpg"></img></li>
                   <li><img src="../src/image/book6.jpg"></img></li>
                   <li><img src="../src/image/book2.jpg"></img></li>
-                  <li><img src="../src/image/book2.jpg"></img></li>
+                  <li className="wowo-add">点击添加</li>
                 </ul>
               </div>
 
@@ -73,23 +73,37 @@ const Content = React.createClass({
                   <li><img src="../src/image/book5.jpg"></img></li>
                   <li><img src="../src/image/book6.jpg"></img></li>
                   <li><img src="../src/image/book1.jpg"></img></li>
-                  <li><img src="../src/image/book4.jpg"></img></li>
+                  <li className="wowo-add">上传图片</li>
                 </ul>
               </div>
             </div>
           </li>
 
-          <li className="wowo-list">纪念日<span></span>
+          <li className="wowo-list">纪念日
             <div className="subMenu">
-              <div>
-                <p>date</p>
+              <div className="center-block">
+                <div className="row">
+                  <div className="wowo-timed col-lg-8">
+                    2015.1.12第一次见面&nbsp;&nbsp;
+                    2016.3.17表白成功&nbsp;&nbsp;
+                    2016.6.2第一次牵手
+                  </div>
+                  <div className="col-lg-4 navbar-right">
+                    <img src={"../src/image/data.png "} alt="..."/>
+                  </div>
+
+                  <div className="form-group">
+                    <input type="text" className=" truth-chat-last col-md-offset-1" id="lastname" placeholder="请输入事件，回车自动保存"/>
+                  </div>
+
+                </div>
               </div>
             </div>
           </li>
-          <li className="wowo-list">档案<span></span>
+          <li className="wowo-list">检查<span></span>
             <div className="subMenu">
-              <div>
-                <p>history</p>
+              <div className="wowo-false" >
+                <p>男生犯错的是时候可以在这里写检查，500自以上自动保存</p>
               </div>
             </div>
           </li>

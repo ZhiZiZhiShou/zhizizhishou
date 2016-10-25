@@ -138,22 +138,46 @@ body {
   height: 210px;
   width: 200px;
 }
-.wowo-list{
+
+.wowo-list {
   color: #e4b9c0;
   cursor: pointer;
 }
-.truth-chat-1{
+
+.truth-chat-1 {
   border: 1px solid pink;
 }
-.truth-chat-2{
+
+.truth-chat-2 {
   border: 1px solid pink;
 }
-.truth-chat{
+
+.truth-chat {
   /*border: 2px solid pink;*/
 }
-.truth-chat-last{
-  border:1px solid pink;
-  height:50px ;
+
+.truth-chat-last {
+  border: 1px solid pink;
+  height: 50px;
   width: 730px;
+}
+
+.wowo-thing {
+  border: 1px solid pink;
+  height: 300px;
+  width: 800px;
+}
+
+.wowo-add {
+  color: #3c3c3c;
+}
+.wowo-false{
+  color: #3c3c3c;
+}
+
+.wowo-timed {
+  color: #3c3c3c;
+  font-style: inherit;
+  font-size: 20px;
 }
 

@@ -3704,13 +3704,13 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "div",
 	            { className: "form-group" },
-	            _react3.default.createElement("input", { type: "password", className: " truth-chat-last", id: "lastname", placeholder: "请输入发送消息，回车自动发送" })
+	            _react3.default.createElement("input", { type: "text", className: " truth-chat-last", id: "lastname", placeholder: "请输入发送消息，回车自动发送" })
 	          )
 	        ),
 	        _react3.default.createElement(
 	          "div",
 	          { className: "navbar-right col-lg-4" },
-	          _react3.default.createElement("img", { src: "../src/image/logowoman.png ", alt: "..." })
+	          _react3.default.createElement("img", { src: "../src/image/logoman.png ", alt: "..." })
 	        )
 	      )
 	    );
@@ -3980,8 +3980,8 @@ webpackJsonp([1],[
 	                ),
 	                _react3.default.createElement(
 	                  "li",
-	                  null,
-	                  _react3.default.createElement("img", { src: "../src/image/book2.jpg" })
+	                  { className: "wowo-add" },
+	                  "点击添加"
 	                )
 	              )
 	            )
@@ -4038,8 +4038,8 @@ webpackJsonp([1],[
 	                ),
 	                _react3.default.createElement(
 	                  "li",
-	                  null,
-	                  _react3.default.createElement("img", { src: "../src/image/book4.jpg" })
+	                  { className: "wowo-add" },
+	                  "上传图片"
 	                )
 	              )
 	            )
@@ -4049,17 +4049,30 @@ webpackJsonp([1],[
 	          "li",
 	          { className: "wowo-list" },
 	          "纪念日",
-	          _react3.default.createElement("span", null),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "subMenu" },
 	            _react3.default.createElement(
 	              "div",
-	              null,
+	              { className: "center-block" },
 	              _react3.default.createElement(
-	                "p",
-	                null,
-	                "date"
+	                "div",
+	                { className: "row" },
+	                _react3.default.createElement(
+	                  "div",
+	                  { className: "wowo-timed col-lg-8" },
+	                  "2015.1.12第一次见面   2016.3.17表白成功   2016.6.2第一次牵手"
+	                ),
+	                _react3.default.createElement(
+	                  "div",
+	                  { className: "col-lg-4 navbar-right" },
+	                  _react3.default.createElement("img", { src: "../src/image/data.png ", alt: "..." })
+	                ),
+	                _react3.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react3.default.createElement("input", { type: "text", className: " truth-chat-last col-md-offset-1", id: "lastname", placeholder: "请输入事件，回车自动保存" })
+	                )
 	              )
 	            )
 	          )
@@ -4067,18 +4080,18 @@ webpackJsonp([1],[
 	        _react3.default.createElement(
 	          "li",
 	          { className: "wowo-list" },
-	          "档案",
+	          "检查",
 	          _react3.default.createElement("span", null),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "subMenu" },
 	            _react3.default.createElement(
 	              "div",
-	              null,
+	              { className: "wowo-false" },
 	              _react3.default.createElement(
 	                "p",
 	                null,
-	                "history"
+	                "男生犯错的是时候可以在这里写检查，500自以上自动保存"
 	              )
 	            )
 	          )
