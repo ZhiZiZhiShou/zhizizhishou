@@ -26,10 +26,10 @@ const Navgation = React.createClass({
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
 
         <ul className=" col-lg-5 col-md-offset-3 nav nav-pills navbar-right home-head-right">
-          <li><a href="#">首页</a></li>
-          <li><a href="#">暖窝窝</a></li>
-          <li><ReactRouter.Link to="/Hand">心里话</ReactRouter.Link></li>
-          <li><a href="#">情人湖</a></li>
+          <li><ReactRouter.Link to="/Home"> 首页</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Wowo"> 暖窝窝</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Truth"> 心里话</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Lake"> 情人湖</ReactRouter.Link></li>
           <li><ReactRouter.Link to="/Personal"> 个人中心</ReactRouter.Link></li>
           <li><ReactRouter.Link to="/Login"> 退出</ReactRouter.Link></li>
         </ul>

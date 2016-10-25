@@ -20,10 +20,10 @@ const Navgation = React.createClass({
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
 
         <ul className=" col-lg-5 col-md-offset-3 nav nav-pills navbar-right home-head-right">
-          <li><ReactRouter.Link to="/Home">首页</ReactRouter.Link></li>
-          <li><a href="#">暖窝窝</a></li>
-          <li><ReactRouter.Link to="/Hand">心里话</ReactRouter.Link></li>
-          <li><a href="#">情人湖</a></li>
+          <li><ReactRouter.Link to="/Home"> 首页</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Wowo"> 暖窝窝</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Truth"> 心里话</ReactRouter.Link></li>
+          <li><ReactRouter.Link to="/Lake"> 情人湖</ReactRouter.Link></li>
           <li><ReactRouter.Link to="/Personal"> 个人中心</ReactRouter.Link></li>
           <li><ReactRouter.Link to="/Login"> 退出</ReactRouter.Link></li>
         </ul>
@@ -38,17 +38,50 @@ const Chat = React.createClass({
       <div className="hand-name ">
         对方正在输入
       </div>
-      <div className="hand-chat1">
-        hello
-      </div>
-      <div className="hand-chat2">
-        hello
-      </div>
-      <div className="hand-chat1">
-        早安
-      </div>
-      <div className="hand-chat2">
-        早安
+
+      <div className="row">
+        <div className="col-lg-7 col-md-offset-1 truth-chat">
+          <br/>
+          <div className="truth-chat-1">
+            hello
+          </div>
+          <div className="truth-chat-2 text-right">
+            hello
+          </div>
+          <div className="truth-chat-1">
+            早安
+          </div>
+          <div className="truth-chat-2 text-right">
+            早安
+          </div>
+          <div className="truth-chat-1">
+            天气很好我们去看电影好吗？
+          </div>
+          <div className="truth-chat-2 text-right">
+            好呀
+          </div>
+          <div className="truth-chat-1">
+            那下午一点电影院等你
+          </div>
+          <div className="truth-chat-2 text-right">
+            嗯嗯，好的
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/><br/><br/>
+
+          <div className="form-group">
+              <input type="password" className=" truth-chat-last" id="lastname" placeholder="请输入发送消息，回车自动发送"/>
+          </div>
+
+        </div>
+
+        <div className="navbar-right col-lg-4">
+          {/*<img src={"../src/image/logoman.png "} alt="..."/>*/}
+          <img src={"../src/image/logowoman.png "} alt="..."/>
+        </div>
+
       </div>
     </div>
 

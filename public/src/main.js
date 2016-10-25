@@ -6,7 +6,9 @@ import Login from "./components/Login"
 import Enter from "./components/Enter"
 import Home from "./components/Home"
 import Registered from "./components/Registered"
-import Hand from "./components/Hand"
+import Truth from "./components/Truth"
+import Lake from "./components/Lake"
+import Wowo from "./components/Wowo"
 
 render(
   <ReactRouter.Router>
@@ -16,7 +18,9 @@ render(
       <ReactRouter.Route path="/Personal" component={Personal}/>
       <ReactRouter.Route path="/Registered" component={Registered}/>
       <ReactRouter.Route path="/Home" component={Home}/>
-      <ReactRouter.Route path="/Hand" component={Hand}/>
+      <ReactRouter.Route path="/Truth" component={Truth}/>
+      <ReactRouter.Route path="/Lake" component={Lake}/>
+      <ReactRouter.Route path="/Wowo" component={Wowo}/>
 
      </ReactRouter.Router>
   , document.getElementById("app"));
