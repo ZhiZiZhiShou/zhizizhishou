@@ -36,15 +36,15 @@ const Add = React.createClass({
           </div>
         </div>
         <div className="form-group">
-          <label for="password" className="col-md-2 control-label">性别</label>
+          <label for="text" className="col-md-2 control-label">性别</label>
           <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="请输入'男'或者‘女’"/>
+            <input type="text" className="form-control" id="lastname" placeholder="请输入'男'或者‘女’"/>
           </div>
         </div>
         <div className="form-group">
-          <label for="password" className="col-md-2 control-label">生日</label>
+          <label for="text" className="col-md-2 control-label">生日</label>
           <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="格式：xxxx.xx.xx"/>
+            <input type="text" className="form-control" id="lastname" placeholder="格式：xxxx.xx.xx"/>
           </div>
         </div>
         <div className="form-group">
@@ -60,15 +60,15 @@ const Add = React.createClass({
           </div>
         </div>
         <div className="form-group">
-          <label for="password" className="col-md-2 control-label">邮箱</label>
+          <label for="text" className="col-md-2 control-label">另一半帐号</label>
           <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="请输入QQ邮箱"/>
+            <input type="text" className="form-control" id="lastname" placeholder="请输入另一半帐号"/>
           </div>
         </div>
         <div className="form-group">
-          <label for="password" className="col-md-2 control-label">手机号</label>
+          <label for="text" className="col-md-2 control-label">手机号</label>
           <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="可选项"/>
+            <input type="text" className="form-control" id="lastname" placeholder="可选项"/>
           </div>
         </div>
         <div className="form-group">

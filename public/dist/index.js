@@ -2810,10 +2810,10 @@ webpackJsonp([1],[
 /* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	        value: true
+	  value: true
 	});
 
 	var _index = __webpack_require__(20);
@@ -2835,40 +2835,182 @@ webpackJsonp([1],[
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var _components = {
-	        _component: {}
+	  _component: {},
+	  _component2: {},
+	  _component3: {},
+	  _component4: {}
 	};
 
 	var _homeHutingtingWorkspaceMyZhizizhishouNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	        filename: "/home/hutingting/Workspace/my/zhizizhishou/public/src/components/Lake.js",
-	        components: _components,
-	        locals: [module],
-	        imports: [_react3.default]
+	  filename: "/home/hutingting/Workspace/my/zhizizhishou/public/src/components/Lake.js",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
 	});
 
 	var _homeHutingtingWorkspaceMyZhizizhishouNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	        filename: "/home/hutingting/Workspace/my/zhizizhishou/public/src/components/Lake.js",
-	        components: _components,
-	        locals: [],
-	        imports: [_react3.default, _index2.default]
+	  filename: "/home/hutingting/Workspace/my/zhizizhishou/public/src/components/Lake.js",
+	  components: _components,
+	  locals: [],
+	  imports: [_react3.default, _index2.default]
 	});
 
 	function _wrapComponent(id) {
-	        return function (Component) {
-	                return _homeHutingtingWorkspaceMyZhizizhishouNode_modulesReactTransformHmrLibIndexJs2(_homeHutingtingWorkspaceMyZhizizhishouNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-	        };
+	  return function (Component) {
+	    return _homeHutingtingWorkspaceMyZhizizhishouNode_modulesReactTransformHmrLibIndexJs2(_homeHutingtingWorkspaceMyZhizizhishouNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	  };
 	}
 
-	var Lake = _wrapComponent("_component")(React.createClass({
-	        displayName: "Lake",
+	var Lake = _wrapComponent("_component")(_react3.default.createClass({
+	  displayName: "Lake",
 
-	        render: function render() {
-	                return React.createElement(
-	                        "div",
-	                        null,
-	                        "Lake"
-	                );
-	        }
+	  render: function render() {
+	    return _react3.default.createElement(
+	      "div",
+	      null,
+	      _react3.default.createElement(Navgation, null),
+	      _react3.default.createElement(Loding, null),
+	      _react3.default.createElement(Footer, null)
+	    );
+	  }
 	}));
+
+	var Navgation = _wrapComponent("_component2")(_react3.default.createClass({
+	  displayName: "Navgation",
+	  render: function render() {
+	    return _react3.default.createElement(
+	      "div",
+	      { className: "navbar row home-head  nav-pills" },
+	      _react3.default.createElement(
+	        "div",
+	        { className: "col-lg-2 col-md-offset-1 home-head-img" },
+	        _react3.default.createElement("img", { src: "src/image/flower.png", alt: "logo" }),
+	        "暖小窝"
+	      ),
+	      _react3.default.createElement(
+	        "ul",
+	        { className: " col-lg-5 col-md-offset-3 nav nav-pills navbar-right home-head-right" },
+	        _react3.default.createElement(
+	          "li",
+	          null,
+	          _react3.default.createElement(
+	            ReactRouter.Link,
+	            { to: "/Home" },
+	            " 首页"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
+	          _react3.default.createElement(
+	            ReactRouter.Link,
+	            { to: "/Wowo" },
+	            " 暖窝窝"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
+	          _react3.default.createElement(
+	            ReactRouter.Link,
+	            { to: "/Truth" },
+	            " 心里话"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
+	          _react3.default.createElement(
+	            ReactRouter.Link,
+	            { to: "/Lake" },
+	            " 情人湖"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
+	          _react3.default.createElement(
+	            ReactRouter.Link,
+	            { to: "/Personal" },
+	            " 个人中心"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
+	          _react3.default.createElement(
+	            ReactRouter.Link,
+	            { to: "/Login" },
+	            " 退出"
+	          )
+	        )
+	      )
+	    );
+	  }
+	}));
+
+	var Loding = _wrapComponent("_component3")(_react3.default.createClass({
+	  displayName: "Loding",
+
+	  render: function render() {
+	    return _react3.default.createElement(
+	      "div",
+	      null,
+	      "Loding"
+	    );
+	  }
+	}));
+	var Footer = _wrapComponent("_component4")(_react3.default.createClass({
+	  displayName: "Footer",
+	  render: function render() {
+	    return _react3.default.createElement(
+	      "div",
+	      { className: "home-footer" },
+	      _react3.default.createElement(
+	        "div",
+	        { className: "row home-footer-last" },
+	        _react3.default.createElement(
+	          "div",
+	          { className: "col-lg-2 col-md-offset-1" },
+	          "下载地址",
+	          _react3.default.createElement("br", null),
+	          _react3.default.createElement("img", { src: "src/image/13.png", alt: "微信公众号" })
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "col-lg-2 col-md-offset-1" },
+	          "博客地址",
+	          _react3.default.createElement("br", null),
+	          "http://blog.csdn.net/ting119"
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "col-lg-2 col-md-offset-1" },
+	          "客服热线",
+	          _react3.default.createElement("br", null),
+	          "1234567"
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "col-lg-3" },
+	          "公众号",
+	          _react3.default.createElement("br", null),
+	          _react3.default.createElement("img", { src: "src/image/13.png", alt: "微信公众号" })
+	        )
+	      ),
+	      _react3.default.createElement(
+	        "div",
+	        { className: "text-center" },
+	        _react3.default.createElement(
+	          "h5",
+	          null,
+	          "2016.9.22 @All Rights Reserved"
+	        )
+	      )
+	    );
+	  }
+	}));
+
 	exports.default = Lake;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)(module)))
 
@@ -3036,7 +3178,7 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "firstname", placeholder: "支持英文、数字" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "firstname", placeholder: "支持中文、英文、数字" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3044,13 +3186,13 @@ webpackJsonp([1],[
 	          { className: "form-group" },
 	          _react3.default.createElement(
 	            "label",
-	            { "for": "password", className: "col-md-2 col-md-offset-3 control-label" },
+	            { "for": "name", className: "col-md-2 col-md-offset-3 control-label" },
 	            "性别"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "请输入“男”或“女”" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入“男”或“女”" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3058,13 +3200,13 @@ webpackJsonp([1],[
 	          { className: "form-group" },
 	          _react3.default.createElement(
 	            "label",
-	            { "for": "password", className: "col-md-2 col-md-offset-3 control-label" },
-	            "职位"
+	            { "for": "name", className: "col-md-2 col-md-offset-3 control-label" },
+	            "星座"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "支持英文、数字" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入星座支持汉字" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3072,13 +3214,13 @@ webpackJsonp([1],[
 	          { className: "form-group" },
 	          _react3.default.createElement(
 	            "label",
-	            { "for": "password", className: "col-md-2 col-md-offset-3 control-label" },
+	            { "for": "name", className: "col-md-2 col-md-offset-3 control-label" },
 	            "生日"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "支持英文、数字" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "支持英文、数字" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3087,7 +3229,7 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "label",
 	            { "for": "password", className: "col-md-2 col-md-offset-3 control-label" },
-	            "地区"
+	            "旧密码"
 	          ),
 	          _react3.default.createElement(
 	            "div",
@@ -3101,7 +3243,7 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "label",
 	            { "for": "password", className: "col-md-2 col-md-offset-3 control-label" },
-	            "工作"
+	            "新密码"
 	          ),
 	          _react3.default.createElement(
 	            "div",
@@ -3326,13 +3468,13 @@ webpackJsonp([1],[
 	          { className: "form-group" },
 	          _react3.default.createElement(
 	            "label",
-	            { "for": "password", className: "col-md-2 control-label" },
+	            { "for": "text", className: "col-md-2 control-label" },
 	            "性别"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "请输入'男'或者‘女’" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入'男'或者‘女’" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3340,13 +3482,13 @@ webpackJsonp([1],[
 	          { className: "form-group" },
 	          _react3.default.createElement(
 	            "label",
-	            { "for": "password", className: "col-md-2 control-label" },
+	            { "for": "text", className: "col-md-2 control-label" },
 	            "生日"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "格式：xxxx.xx.xx" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "格式：xxxx.xx.xx" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3382,13 +3524,13 @@ webpackJsonp([1],[
 	          { className: "form-group" },
 	          _react3.default.createElement(
 	            "label",
-	            { "for": "password", className: "col-md-2 control-label" },
-	            "邮箱"
+	            { "for": "text", className: "col-md-2 control-label" },
+	            "另一半帐号"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "请输入QQ邮箱" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入另一半帐号" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3396,13 +3538,13 @@ webpackJsonp([1],[
 	          { className: "form-group" },
 	          _react3.default.createElement(
 	            "label",
-	            { "for": "password", className: "col-md-2 control-label" },
+	            { "for": "text", className: "col-md-2 control-label" },
 	            "手机号"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "可选项" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "可选项" })
 	          )
 	        ),
 	        _react3.default.createElement(

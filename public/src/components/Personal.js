@@ -40,36 +40,36 @@ const Add = React.createClass({
         <div className="form-group">
           <label for="name" className="col-md-2 col-md-offset-3 control-label">昵称</label>
           <div className="col-md-3">
-            <input type="text" className="form-control" id="firstname" placeholder="支持英文、数字"/>
+            <input type="text" className="form-control" id="firstname" placeholder="支持中文、英文、数字"/>
           </div>
         </div>
 
         <div className="form-group">
-          <label for="password" className="col-md-2 col-md-offset-3 control-label">性别</label>
+          <label for="name" className="col-md-2 col-md-offset-3 control-label">性别</label>
           <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="请输入“男”或“女”"/>
+            <input type="text" className="form-control" id="lastname" placeholder="请输入“男”或“女”"/>
           </div>
         </div>
         <div className="form-group">
-          <label for="password" className="col-md-2 col-md-offset-3 control-label">职位</label>
+          <label for="name" className="col-md-2 col-md-offset-3 control-label">星座</label>
+          <div className="col-md-3">
+            <input type="text" className="form-control" id="lastname" placeholder="请输入星座支持汉字"/>
+          </div>
+        </div>
+        <div className="form-group">
+          <label for="name" className="col-md-2 col-md-offset-3 control-label">生日</label>
+          <div className="col-md-3">
+            <input type="text" className="form-control" id="lastname" placeholder="支持英文、数字"/>
+          </div>
+        </div>
+        <div className="form-group">
+          <label for="password" className="col-md-2 col-md-offset-3 control-label">旧密码</label>
           <div className="col-md-3">
             <input type="password" className="form-control" id="lastname" placeholder="支持英文、数字"/>
           </div>
         </div>
         <div className="form-group">
-          <label for="password" className="col-md-2 col-md-offset-3 control-label">生日</label>
-          <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="支持英文、数字"/>
-          </div>
-        </div>
-        <div className="form-group">
-          <label for="password" className="col-md-2 col-md-offset-3 control-label">地区</label>
-          <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="支持英文、数字"/>
-          </div>
-        </div>
-        <div className="form-group">
-          <label for="password" className="col-md-2 col-md-offset-3 control-label">工作</label>
+          <label for="password" className="col-md-2 col-md-offset-3 control-label">新密码</label>
           <div className="col-md-3">
             <input type="password" className="form-control" id="lastname" placeholder="支持英文、数字"/>
           </div>

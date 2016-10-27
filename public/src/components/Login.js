@@ -16,6 +16,10 @@ const Navgation = React.createClass({
 
     return (
 
+
+
+
+
       <div className="navbar row home-head  nav-pills">
 
         <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
