@@ -78,8 +78,8 @@ const Chat = React.createClass({
         </div>
 
         <div className="navbar-right col-lg-4">
-          <img src={"../src/image/logoman.png "} alt="..."/>
-          {/*<img src={"../src/image/logowoman.png "} alt="..."/>*/}
+          {/*<img src={"../src/image/logoman.png "} alt="..."/>*/}
+          <img src={"../src/image/logowoman.png "} alt="..."/>
         </div>
 
       </div>

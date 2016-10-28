@@ -3852,7 +3852,7 @@ webpackJsonp([1],[
 	        _react3.default.createElement(
 	          "div",
 	          { className: "navbar-right col-lg-4" },
-	          _react3.default.createElement("img", { src: "../src/image/logoman.png ", alt: "..." })
+	          _react3.default.createElement("img", { src: "../src/image/logowoman.png ", alt: "..." })
 	        )
 	      )
 	    );
