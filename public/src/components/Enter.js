@@ -2,12 +2,28 @@
 import React, {Component} from "react";
 
 const Enter = React.createClass({
+
+
+  getInitialState: function () {
+    return {
+      user: [],
+    }
+  },
+
+
   render: function () {
-    return <div>
-      <Navgation/>
-      <Add/>
-      <Footer/>
-    </div>
+
+      return <div>
+        <Navgation/>
+
+        <div>
+          <LoginArea/>
+        </div>
+
+        {/*<Add/>*/}
+        <Footer/>
+      </div>
+
   }
 })
 
@@ -25,27 +41,57 @@ const Navgation = React.createClass({
   }
 })
 
-const Add = React.createClass({
+const LoginArea = React.createClass({
+
+
+  getInitialState: function () {
+    return {
+      isSame: false,
+    }
+  },
+
+  jude: function () {
+    let username = $("input[name=username]").val();
+    let password = $("input[name=password]").val();
+
+    if (username === '') {
+      alert("用户名不能为空，请输入用户名")
+    }
+    else if(password === '') {
+      alert("密码不能为空，请输入密码")
+    }
+
+    $.get('/selectUser',  (data)=> {
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].user == username && data[i].password == password) {
+          this.setState({isSame:true});
+
+        }
+      }
+    })
+    },
+
   render: function () {
     return <div>
 
       <form className="form-horizontal enter-input" role="form">
+
         <div className="form-group">
+
           <label for="name" className="col-md-2 control-label">爱窝昵称</label>
+
           <div className="col-md-3">
-            <input type="text" className="form-control" id="firstname" placeholder="请输入爱窝昵称"/>
+
+            <input type="text" className="form-control" name="username" id="username" autoFocus="true" placeholder="请输入爱窝昵称"/>
+
           </div>
+
         </div>
-        <div className="form-group">
-          <label for="password" className="col-md-2 control-label">性别</label>
-          <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="请输入'body'或‘girl’其余无效"/>
-          </div>
-        </div>
+
         <div className="form-group">
           <label for="password" className="col-md-2 control-label">密码</label>
           <div className="col-md-3">
-            <input type="password" className="form-control" id="lastname" placeholder="请输入密码"/>
+            <input type="password" className="form-control" name="password" id="password" placeholder="请输入密码"/>
           </div>
         </div>
 
@@ -58,10 +104,14 @@ const Add = React.createClass({
             </div>
           </div>
         </div>
+
         <div className="form-group row">
           <div className="col-md-offset-2 col-md-1">
-            <button type="submit" className="btn btn-default"><ReactRouter.Link to="/Home"> 登录</ReactRouter.Link>
+            <ReactRouter.Link to={this.state.isSame ? '/Home' : '/Enter'}>
+            <button type="submit" className="btn btn-default" onClick={this.jude}>
+               登录
             </button>
+            </ReactRouter.Link>
           </div>
           <div className="col-md-offset-1">
             <button type="submit" className="btn btn-default"><ReactRouter.Link to="/Home"> 忘记密码</ReactRouter.Link>
@@ -72,6 +122,8 @@ const Add = React.createClass({
     </div>
   }
 })
+
+
 
 const Footer = React.createClass({
   render(){

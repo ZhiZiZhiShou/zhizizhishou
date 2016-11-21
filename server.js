@@ -1,24 +1,14 @@
-import express from 'express';
-import webpack from 'webpack';
-import webpackConfig from './webpack.config';
+const express = require('express');
 
 const app = express();
-const compiler = webpack(webpackConfig);
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  publicPath: webpackConfig.output.publicPath
-}));
+var path = require('path');
+const selectUser = require('./public/src/mongodb/users/selectUser');
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(require('webpack-hot-middleware')(compiler));
-
-
+app.use('/selectUser', selectUser.findUser);
 
 app.use(express.static('public'));
 
-app.get('/', (res, req)=> {
-  req.send('abc');
-});
-
-app.listen(3000, function() {
+app.listen(3000, function () {
   console.log("server started at http://localhost:3000");
 });

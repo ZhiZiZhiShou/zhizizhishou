@@ -2394,12 +2394,24 @@ webpackJsonp([1],[
 	var Enter = _wrapComponent("_component")(_react3.default.createClass({
 	  displayName: "Enter",
 
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      user: []
+	    };
+	  },
+
 	  render: function render() {
+
 	    return _react3.default.createElement(
 	      "div",
 	      null,
 	      _react3.default.createElement(Navgation, null),
-	      _react3.default.createElement(Add, null),
+	      _react3.default.createElement(
+	        "div",
+	        null,
+	        _react3.default.createElement(LoginArea, null)
+	      ),
 	      _react3.default.createElement(Footer, null)
 	    );
 	  }
@@ -2443,8 +2455,36 @@ webpackJsonp([1],[
 	  }
 	}));
 
-	var Add = _wrapComponent("_component3")(_react3.default.createClass({
-	  displayName: "Add",
+	var LoginArea = _wrapComponent("_component3")(_react3.default.createClass({
+	  displayName: "LoginArea",
+
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      isSame: false
+	    };
+	  },
+
+	  jude: function jude() {
+	    var _this = this;
+
+	    var username = $("input[name=username]").val();
+	    var password = $("input[name=password]").val();
+
+	    if (username === '') {
+	      alert("用户名不能为空，请输入用户名");
+	    } else if (password === '') {
+	      alert("密码不能为空，请输入密码");
+	    }
+
+	    $.get('/selectUser', function (data) {
+	      for (var i = 0; i < data.length; i++) {
+	        if (data[i].user == username && data[i].password == password) {
+	          _this.setState({ isSame: true });
+	        }
+	      }
+	    });
+	  },
 
 	  render: function render() {
 	    return _react3.default.createElement(
@@ -2464,21 +2504,7 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "firstname", placeholder: "请输入爱窝昵称" })
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "div",
-	          { className: "form-group" },
-	          _react3.default.createElement(
-	            "label",
-	            { "for": "password", className: "col-md-2 control-label" },
-	            "性别"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "请输入'body'或‘girl’其余无效" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", name: "username", id: "username", autoFocus: "true", placeholder: "请输入爱窝昵称" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -2492,7 +2518,7 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "请输入密码" })
+	            _react3.default.createElement("input", { type: "password", className: "form-control", name: "password", id: "password", placeholder: "请输入密码" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -2520,12 +2546,12 @@ webpackJsonp([1],[
 	            "div",
 	            { className: "col-md-offset-2 col-md-1" },
 	            _react3.default.createElement(
-	              "button",
-	              { type: "submit", className: "btn btn-default" },
+	              ReactRouter.Link,
+	              { to: this.state.isSame ? '/Home' : '/Enter' },
 	              _react3.default.createElement(
-	                ReactRouter.Link,
-	                { to: "/Home" },
-	                " 登录"
+	                "button",
+	                { type: "submit", className: "btn btn-default", onClick: this.jude },
+	                "登录"
 	              )
 	            )
 	          ),
