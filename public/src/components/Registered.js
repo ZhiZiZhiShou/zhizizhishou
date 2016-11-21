@@ -30,23 +30,19 @@ const Add = React.createClass({
     return <div>
       <form className="form-horizontal enter-input" role="form">
         <div className="form-group">
-          <label for="name" className="col-md-2 control-label">昵称</label>
+          <label for="name" className="col-md-2 control-label">爱窝昵称</label>
           <div className="col-md-3">
-            <input type="text" className="form-control" id="firstname" placeholder="字母加数字长度不超过6位"/>
+            <input type="text" className="form-control" id="firstname" placeholder="请与另一半爱窝昵称相同"/>
           </div>
         </div>
+
         <div className="form-group">
           <label for="text" className="col-md-2 control-label">性别</label>
           <div className="col-md-3">
-            <input type="text" className="form-control" id="lastname" placeholder="请输入'男'或者‘女’"/>
+            <input type="text" className="form-control" id="lastname" placeholder="请输入'body'或‘girl’其余无效"/>
           </div>
         </div>
-        <div className="form-group">
-          <label for="text" className="col-md-2 control-label">生日</label>
-          <div className="col-md-3">
-            <input type="text" className="form-control" id="lastname" placeholder="格式：xxxx.xx.xx"/>
-          </div>
-        </div>
+
         <div className="form-group">
           <label for="password" className="col-md-2 control-label">密码</label>
           <div className="col-md-3">
@@ -60,15 +56,10 @@ const Add = React.createClass({
           </div>
         </div>
         <div className="form-group">
-          <label for="text" className="col-md-2 control-label">另一半帐号</label>
+          <label for="text" className="col-md-2 control-label">邀请码</label>
           <div className="col-md-3">
-            <input type="text" className="form-control" id="lastname" placeholder="请输入另一半帐号"/>
-          </div>
-        </div>
-        <div className="form-group">
-          <label for="text" className="col-md-2 control-label">手机号</label>
-          <div className="col-md-3">
-            <input type="text" className="form-control" id="lastname" placeholder="可选项"/>
+            <input type="text" className="form-control" id="lastname" placeholder="请输入邀请码"/>
+            <button>生成邀请码</button>
           </div>
         </div>
         <div className="form-group">

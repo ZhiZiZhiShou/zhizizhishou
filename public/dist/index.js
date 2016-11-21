@@ -2459,12 +2459,26 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "label",
 	            { "for": "name", className: "col-md-2 control-label" },
-	            "帐号"
+	            "爱窝昵称"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "firstname", placeholder: "请输入帐号" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "firstname", placeholder: "请输入爱窝昵称" })
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "form-group" },
+	          _react3.default.createElement(
+	            "label",
+	            { "for": "password", className: "col-md-2 control-label" },
+	            "性别"
+	          ),
+	          _react3.default.createElement(
+	            "div",
+	            { className: "col-md-3" },
+	            _react3.default.createElement("input", { type: "password", className: "form-control", id: "lastname", placeholder: "请输入'body'或‘girl’其余无效" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3455,12 +3469,12 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "label",
 	            { "for": "name", className: "col-md-2 control-label" },
-	            "昵称"
+	            "爱窝昵称"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "firstname", placeholder: "字母加数字长度不超过6位" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "firstname", placeholder: "请与另一半爱窝昵称相同" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3474,21 +3488,7 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入'男'或者‘女’" })
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "div",
-	          { className: "form-group" },
-	          _react3.default.createElement(
-	            "label",
-	            { "for": "text", className: "col-md-2 control-label" },
-	            "生日"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "格式：xxxx.xx.xx" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入'body'或‘girl’其余无效" })
 	          )
 	        ),
 	        _react3.default.createElement(
@@ -3525,26 +3525,17 @@ webpackJsonp([1],[
 	          _react3.default.createElement(
 	            "label",
 	            { "for": "text", className: "col-md-2 control-label" },
-	            "另一半帐号"
+	            "邀请码"
 	          ),
 	          _react3.default.createElement(
 	            "div",
 	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入另一半帐号" })
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "div",
-	          { className: "form-group" },
-	          _react3.default.createElement(
-	            "label",
-	            { "for": "text", className: "col-md-2 control-label" },
-	            "手机号"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "col-md-3" },
-	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "可选项" })
+	            _react3.default.createElement("input", { type: "text", className: "form-control", id: "lastname", placeholder: "请输入邀请码" }),
+	            _react3.default.createElement(
+	              "button",
+	              null,
+	              "生成邀请码"
+	            )
 	          )
 	        ),
 	        _react3.default.createElement(

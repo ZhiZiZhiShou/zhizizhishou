@@ -31,9 +31,15 @@ const Add = React.createClass({
 
       <form className="form-horizontal enter-input" role="form">
         <div className="form-group">
-          <label for="name" className="col-md-2 control-label">帐号</label>
+          <label for="name" className="col-md-2 control-label">爱窝昵称</label>
           <div className="col-md-3">
-            <input type="text" className="form-control" id="firstname" placeholder="请输入帐号"/>
+            <input type="text" className="form-control" id="firstname" placeholder="请输入爱窝昵称"/>
+          </div>
+        </div>
+        <div className="form-group">
+          <label for="password" className="col-md-2 control-label">性别</label>
+          <div className="col-md-3">
+            <input type="password" className="form-control" id="lastname" placeholder="请输入'body'或‘girl’其余无效"/>
           </div>
         </div>
         <div className="form-group">
@@ -42,6 +48,7 @@ const Add = React.createClass({
             <input type="password" className="form-control" id="lastname" placeholder="请输入密码"/>
           </div>
         </div>
+
         <div className="form-group">
           <div className="col-md-offset-2 col-md-10">
             <div className="checkbox">
